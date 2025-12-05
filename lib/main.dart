@@ -8,11 +8,11 @@ import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 import 'package:provider/provider.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:myapp/screens/home_screen.dart';
-import 'package:myapp/screens/search_screen.dart';
-import 'package:myapp/screens/my_quran_screen.dart';
-import 'package:myapp/screens/radio_screen.dart';
-import 'package:myapp/screens/settings_screen.dart';
+import 'package:quran_alkarim/screens/home_screen.dart';
+import 'package:quran_alkarim/screens/search_screen.dart';
+import 'package:quran_alkarim/screens/my_quran_screen.dart';
+import 'package:quran_alkarim/screens/radio_screen.dart';
+import 'package:quran_alkarim/screens/settings_screen.dart';
 
 class NotificationService {
   static final NotificationService _instance = NotificationService._internal();
@@ -105,7 +105,7 @@ class _MainScreenState extends State<MainScreen> {
             _selectedIndex = index;
           });
         },
-        children: const [
+        children: [
           HomeScreen(),
           SearchScreen(),
           MyQuranScreen(),
